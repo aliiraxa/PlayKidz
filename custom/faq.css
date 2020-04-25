@@ -1,0 +1,111 @@
+.header {
+  background-image: url("./../img/faq/header.jpg");
+  background-position: center center;
+  background-size: 100% 100%;
+  color: white;
+  padding-top: 200px;
+  text-align: center;
+}
+
+.header .faqheading {
+  font-weight: bold;
+  font-size: 60px;
+}
+
+body {
+  background-color: #fdffff;
+}
+
+.faq-area {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-image: url("./../img/faq/bg.jpg");
+  background-position: center center;
+  background-size: 100% 100%;
+  /* Vertical line */
+}
+
+.faq-area .card, .faq-area .headingOne {
+  margin-bottom: 10px;
+}
+
+.faq-area .collapsible-link::before {
+  content: '';
+  width: 26px;
+  height: 6px;
+  background: #92ba51;
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 1rem;
+  display: block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.faq-area .collapsible-link::after {
+  content: '';
+  width: 6px;
+  height: 26px;
+  background: #92ba51;
+  position: absolute;
+  top: calc(50% - 9px);
+  right: calc(1rem + 10px);
+  display: block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.faq-area .collapsible-link[aria-expanded='true']::after {
+  -webkit-transform: rotate(90deg) translateX(-1px);
+          transform: rotate(90deg) translateX(-1px);
+}
+
+.faq-area .collapsible-link[aria-expanded='true']::before {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.faq-area .research {
+  text-align: center;
+}
+
+.faq-area .research .fa {
+  position: absolute;
+  right: 26px;
+  top: 6px;
+  font-size: 30px;
+}
+
+.faq-area .research input {
+  border: 1px solid silver;
+  border-radius: 20px;
+  padding: 10px 7px;
+  width: 100%;
+}
+
+.faq-area .research input:focus,
+.faq-area .research select:focus,
+.faq-area .research textarea:focus,
+.faq-area .research button:focus {
+  outline: none;
+}
+
+.faq-area .research p {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    padding-top: 100px !important;
+  }
+  header {
+    margin-top: -100px;
+  }
+  .faqheading {
+    font-size: 33px !important;
+  }
+  .footer {
+    margin-top: -2px;
+  }
+}
+/*# sourceMappingURL=faq.css.map */

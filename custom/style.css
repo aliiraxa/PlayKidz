@@ -563,6 +563,9 @@ body {
   }
   .mobile-view {
     display: block;
+    position: fixed;
+    right: 6px;
+    top: 1px;
   }
   .centre-area {
     padding-top: -500px !important;
@@ -573,18 +576,20 @@ body {
   .header nav .mobile-view h1 {
     display: inline-block;
     color: white;
-    margin-right: 12%;
+    position: fixed;
+    left: 35%;
+    top: 5px;
+    font-size: 32px;
   }
   .header nav .mobile-view button {
     background-color: white;
     border-radius: 30px;
     color: #b20f22;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 17px;
     border: none;
     padding: 5px 16px;
-    margin-top: -10%;
-    margin-right: -30%;
+    margin-top: 10px;
   }
   .header .mobile-view h2 {
     color: white;
@@ -696,19 +701,15 @@ body {
   .header nav .mobile-view h1 {
     display: inline-block;
     color: white;
-    margin-left: -80%;
   }
   .header nav .mobile-view button {
     background-color: white;
     border-radius: 30px;
     color: #b20f22;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     border: none;
     padding: 5px 16px;
-    margin-top: -10%;
-    margin-right: -30% !important;
-    margin-left: 90%;
   }
   .header .mobile-view h2 {
     color: white;
@@ -748,8 +749,15 @@ body {
     padding-right: 23%;
     padding-top: 25% !important;
   }
-  .content .mobile-view {
-    width: 400px;
+}
+
+/* ipad pro */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+  .mobile-view {
+    display: none;
+  }
+  .bg-nav {
+    background-color: green;
   }
 }
 /*# sourceMappingURL=style.css.map */

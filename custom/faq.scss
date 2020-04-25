@@ -1,0 +1,117 @@
+@mixin background-img($url) {
+    background-image: $url;
+    background-position: center center;
+    background-size: 100% 100%;
+  }
+
+  .header
+  {
+    @include background-img(url("./../img/faq/header.jpg"));
+    color: white;
+    padding-top: 200px;
+    text-align: center;
+    .faqheading
+    {
+        font-weight: bold;
+        font-size: 60px;
+    }
+    
+  }
+body
+{
+    background-color: #fdffff;
+}
+  .faq-area
+  {
+      padding-top: 40px;
+      padding-bottom: 60px;
+      @include background-img(url("./../img/faq/bg.jpg"));
+      .card,.headingOne
+      {
+          margin-bottom: 10px;
+      }
+    .collapsible-link::before {
+        content: '';
+        width: 26px;
+        height: 6px;
+        background: #92ba51;
+        position: absolute;
+        top: calc(50% - 1px);
+        right: 1rem;
+        display: block;
+        transition: all 0.3s;
+      }
+      
+      /* Vertical line */
+      .collapsible-link::after {
+        content: '';
+        width: 6px;
+        height: 26px;
+        background: #92ba51;
+        position: absolute;
+        top: calc(50% - 9px);
+        right: calc(1rem + 10px);
+        display: block;
+        transition: all 0.3s;
+      }
+      
+      .collapsible-link[aria-expanded='true']::after {
+        transform: rotate(90deg) translateX(-1px);
+      }
+      
+      .collapsible-link[aria-expanded='true']::before {
+        transform: rotate(180deg);
+      }
+
+      .research 
+      {
+          text-align: center;
+          .fa
+          {
+              position: absolute;
+              right: 26px;
+              top: 6px;
+              font-size: 30px;
+          }
+        input
+        {
+            border: 1px solid silver;
+            border-radius: 20px;
+            padding: 10px 7px;
+            width: 100%;
+        }
+        input:focus,
+        select:focus,
+        textarea:focus,
+        button:focus {
+            outline: none;
+        }
+        p{
+            text-align: center;
+        }
+
+      }
+
+  }
+  
+  @media (max-width: 768px) {
+      .heading 
+      {
+        padding-top: 100px !important;
+      }
+      header
+      {
+        margin-top: -100px;
+      }
+    .faqheading
+    {
+        font-size: 33px !important;
+    }
+    .footer
+    {
+      margin-top: -2px;
+    }
+
+}
+
+  
