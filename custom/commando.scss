@@ -1,0 +1,73 @@
+@mixin background-img($url) {
+    background-image: $url;
+    background-position: center center;
+    background-size: 100% 100%;
+  }
+  body
+  {
+      background-color: white;
+  }
+  .header
+  {
+    background-image: none;
+    background-color: #b41023;
+    padding-top: 90px;
+    margin: 0;
+  }
+  .one
+  {
+      margin-top: 8%;
+      margin-bottom: 8%;
+      h1
+      {
+          font-weight: bold;
+      }
+  }
+
+.second-area
+{
+    @include background-img(url("./../img/commando/Commande-01.jpg"));
+    color: white;
+   text-align: center;
+   padding-top: 30px;
+    padding-bottom: 10px;
+    p
+    {
+        margin-top: 40px;
+    }
+}
+.footer-second
+{
+    margin-top: -10%;
+    text-align: center;
+    padding-top: 20%;
+    @include background-img(url("./../img/commando/Commande-02.jpg"));
+    h1
+    {
+        color:#ad7f01;
+        margin-top: -20px;
+        font-weight: bold;
+    }
+    .row
+    {
+        margin-top: 6%;
+    }
+    p
+    {
+        color:#ad7f01;
+        margin: 10px 0;
+    }
+
+}
+
+
+
+
+.footer-above
+{
+    padding-bottom: 90px;
+    margin-bottom: -50px;
+    margin-top: 30px;
+    @include background-img(url("./../img/commando/footer-above.jpg"));
+}
+
