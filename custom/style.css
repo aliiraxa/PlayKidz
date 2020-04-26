@@ -787,6 +787,9 @@ body {
     right: 6px;
     top: 1px;
   }
+  .videom {
+    margin-right: -200px;
+  }
   .centre-area {
     padding-top: -500px !important;
   }
