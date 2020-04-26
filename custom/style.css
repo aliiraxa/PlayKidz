@@ -366,7 +366,7 @@ body {
 =============================================*/
 .footer-top {
   margin-top: 7%;
-  margin-bottom: 80px;
+  margin-bottom: 200px;
 }
 
 .footer-top h1 {
@@ -499,11 +499,20 @@ body {
 .mobile-view {
   display: none;
 }
+.mobile-view1
+{
+  display: none;
+}
 
 /*=====  End of footer area  ======*/
-@media (max-width: 650px) {
+@media (max-width: 680px) {
   nav {
     background-color: #c71c2f;
+  }
+  .mobile-view1
+  {
+    display: inline-block;
+    text-align: center;
   }
   .footer-top h1 {
     font-size: 50px !important;
@@ -514,6 +523,14 @@ body {
   .man {
     display: none;
   }
+ .mycard
+ {
+   font-size: 10px !important;
+ }
+ .mycard button
+ {
+   font-size: 10px !important;
+ }
   .mobile-second {
     text-align: center;
     display: block;
@@ -577,18 +594,18 @@ body {
     display: inline-block;
     color: white;
     position: fixed;
-    left: 35%;
-    top: 5px;
-    font-size: 32px;
+    right: 40%;
+    top: 9px;
+    font-size: 30px;
   }
   .header nav .mobile-view button {
     background-color: white;
     border-radius: 30px;
     color: #b20f22;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 16px;
     border: none;
-    padding: 5px 16px;
+    padding: 5px 13px;
     margin-top: 10px;
   }
   .header .mobile-view h2 {
@@ -635,6 +652,11 @@ body {
   }
   .footer-top h1 {
     font-size: 50px !important;
+  }
+  .mobile-view1
+  {
+    display: inline-block;
+    text-align: center;
   }
   .header-second {
     display: none;
@@ -691,12 +713,33 @@ body {
   }
   .mobile-view {
     display: block;
+    position: fixed;
+    right: 6px;
+    top: 1px;
   }
   .centre-area {
     padding-top: -500px !important;
   }
   .header-one h1 {
     font-size: 28px;
+  }
+  .header nav .mobile-view h1 {
+    display: inline-block;
+    color: white;
+    position: fixed;
+    right: 40%;
+    top: 9px;
+    font-size: 30px;
+  }
+  .header nav .mobile-view button {
+    background-color: white;
+    border-radius: 30px;
+    color: #b20f22;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    padding: 5px 13px;
+    margin-top: 10px;
   }
   .header nav .mobile-view h1 {
     display: inline-block;
@@ -755,6 +798,31 @@ body {
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
   .mobile-view {
     display: none;
+  }
+  .header .navbar-brand {
+    display: inline-block;
+  }
+  .navbar-brand
+  {
+    margin-left: -70px;
+  }
+  nav li
+  {
+    margin-left: -50px;
+
+  }
+  .mobile-second p
+  {
+    text-align: center;
+  }
+  .mobile-view1
+  {
+    display: inline-block;
+    text-align: center;
+  }
+  .videom
+  {
+    margin-right: -300px;
   }
 }
 /*# sourceMappingURL=style.css.map */

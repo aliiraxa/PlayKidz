@@ -31,10 +31,17 @@
    text-align: center;
    padding-top: 30px;
     padding-bottom: 10px;
+    .been
+    {
+        width: 72%;
+    }
     p
     {
         margin-top: 40px;
+        width: 80%;
+        text-align: center;
     }
+    
 }
 .footer-second
 {
@@ -71,3 +78,15 @@
     @include background-img(url("./../img/commando/footer-above.jpg"));
 }
 
+
+@media (max-width: 680px) 
+{
+    .viewm
+    {
+        display: none;
+    }
+    .footer-second
+    {
+        background-image: none;
+    }
+}

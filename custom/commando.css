@@ -28,8 +28,14 @@ body {
   padding-bottom: 10px;
 }
 
+.second-area .been {
+  width: 72%;
+}
+
 .second-area p {
   margin-top: 40px;
+  width: 80%;
+  text-align: center;
 }
 
 .footer-second {
@@ -63,5 +69,14 @@ body {
   background-image: url("./../img/commando/footer-above.jpg");
   background-position: center center;
   background-size: 100% 100%;
+}
+
+@media (max-width: 680px) {
+  .viewm {
+    display: none;
+  }
+  .footer-second {
+    background-image: none;
+  }
 }
 /*# sourceMappingURL=commando.css.map */
