@@ -795,7 +795,7 @@ body {
 }
 
 /* ipad pro */
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1166px) {
   .mobile-view {
     display: none;
   }
@@ -806,11 +806,7 @@ body {
   {
     margin-left: -70px;
   }
-  nav li
-  {
-    margin-left: -50px;
-
-  }
+  
   .mobile-second p
   {
     text-align: center;
@@ -826,3 +822,8 @@ body {
   }
 }
 /*# sourceMappingURL=style.css.map */
+nav li
+  {
+    margin-left: -20px;
+
+  }
