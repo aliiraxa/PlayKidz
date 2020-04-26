@@ -806,7 +806,15 @@ body {
   {
     margin-left: -70px;
   }
-  
+  nav li
+  {
+    margin-left: -80px;
+
+  }
+  .nav-item
+  {
+    margin-right: 120px !important;
+  }
   .mobile-second p
   {
     text-align: center;
