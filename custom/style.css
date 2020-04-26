@@ -19,24 +19,12 @@ body {
   background-size: 100% 100%;
 }
 
-.header nav {
-  z-index: 1000;
-  width: 100%;
-  padding-left: 10%;
-  position: fixed;
-  padding-right: 10%;
-  margin-bottom: 0;
-}
 
 .header nav li {
   margin-right: 70%;
 }
 
-.header #scroll.active {
-  background-color: #b41023;
-  -webkit-box-shadow: 1px 1px 8px black;
-  box-shadow: 1px 1px 8px black;
-}
+
 
 .header .navbar-custom .nav-item.active .nav-link,
 .header .navbar-custom .nav-item:hover .nav-link {
