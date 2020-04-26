@@ -174,20 +174,25 @@ body {
 .header-second .leftarrow1 {
   position: absolute;
   z-index: -10;
-  left: -30px;
+  left: -5px;
   bottom: 23px;
 }
 .header-second .child-img {
   position: relative;
+  display: block;
 }
 .header-second .showimg {
   position: absolute;
-  display: none;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
   top: 12.5%;
   left: 20%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
   width: 59%;
-  background-color: #f78a95;
-  opacity: 80%;
+  background-color: #b20f22;
   border-radius: 80px;
   transform: rotate(12deg);
 }
@@ -204,8 +209,15 @@ body {
   margin-top: -20px;
   padding-bottom: 0;
 }
+.col-md-6:hover img {
+  opacity: 0.8;
+}
+.col-md-6:hover .showimg {
+  opacity: 0.8;
+}
 .header-second .child-img:hover ~ .showimg {
   display: block;
+  cursor:pointer;
 }
 .header-second .child-img2 {
   position: relative;
