@@ -204,7 +204,42 @@ body {
   padding-bottom: 0;
 }
 .header-second .child-img:hover ~ .showimg {
-  /* background-color: red; */
+  display: block;
+}
+.header-second .child-img2 {
+  position: relative;
+}
+.header-second .showimg2 {
+  left: 22%;
+  transform: rotate(-12deg);
+}
+.header-second .child-img2:hover ~ .showimg2 {
+  display: block;
+}
+
+.header-second .child-img3 {
+  position: relative;
+}
+.header-second .showimg3 {
+  left: 19%;
+  top: 13.5%;
+  width: 61%;
+  transform: rotate(0);
+}
+.header-second .child-img3:hover ~ .showimg3 {
+  display: block;
+}
+
+.header-second .child-img4 {
+  position: relative;
+}
+.header-second .showimg4 {
+  left: 19%;
+  top: 13.5%;
+  width: 61%;
+  transform: rotate(0);
+}
+.header-second .child-img4:hover ~ .showimg4 {
   display: block;
 }
 
@@ -855,10 +890,6 @@ body {
   .videom {
     margin-right: -300px;
   }
-
-
-
-  
 }
 /*# sourceMappingURL=style.css.map */
 nav li {
