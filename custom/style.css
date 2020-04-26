@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
 @font-face {
   font-family: "Playkidz";
-  src: url("Playkidz.ttf.woff") format("woff"), url("Playkidz.ttf.svg#Playkidz") format("svg"), url("Playkidz.ttf.eot"), url("Playkidz.eot?#iefix") format("embedded-opentype");
+  src: url("Playkidz.ttf.woff") format("woff"),
+    url("Playkidz.ttf.svg#Playkidz") format("svg"), url("Playkidz.ttf.eot"),
+    url("Playkidz.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -33,7 +35,7 @@ body {
 .header #scroll.active {
   background-color: #b41023;
   -webkit-box-shadow: 1px 1px 8px black;
-          box-shadow: 1px 1px 8px black;
+  box-shadow: 1px 1px 8px black;
 }
 
 .header .navbar-custom .nav-item.active .nav-link,
@@ -175,6 +177,9 @@ body {
   left: -30px;
   bottom: 23px;
 }
+.header-second .child-img:hover {
+  background-color: red;
+}
 
 .header-second .imgleft {
   margin-left: -100px;
@@ -207,7 +212,7 @@ body {
   font-weight: bold;
   font-size: 24px;
   -webkit-transform: rotate(13deg);
-          transform: rotate(13deg);
+  transform: rotate(13deg);
 }
 
 .header-second .left2 {
@@ -219,7 +224,7 @@ body {
   font-weight: bold;
   font-size: 24px;
   -webkit-transform: rotate(353deg);
-          transform: rotate(353deg);
+  transform: rotate(353deg);
 }
 
 .header-second .right1 {
@@ -231,7 +236,7 @@ body {
   font-weight: bold;
   font-size: 24px;
   -webkit-transform: rotate(-13deg);
-          transform: rotate(-13deg);
+  transform: rotate(-13deg);
 }
 
 .header-second .right2 {
@@ -243,7 +248,7 @@ body {
   font-weight: bold;
   font-size: 24px;
   -webkit-transform: rotate(-353deg);
-          transform: rotate(-353deg);
+  transform: rotate(-353deg);
 }
 
 /*=============================================
@@ -361,6 +366,13 @@ body {
   background-color: black;
 }
 
+.footer-second .slides {
+  width: 100%;
+}
+.footer-second .slides-hidden {
+  display: none;
+}
+
 /*=============================================
 =            foot above first area            =
 =============================================*/
@@ -397,7 +409,7 @@ body {
 
 .footer-top .email :focus {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   outline: none;
 }
 
@@ -471,12 +483,12 @@ body {
 
 .footer .f {
   -webkit-transform: rotate(-10deg);
-          transform: rotate(-10deg);
+  transform: rotate(-10deg);
 }
 
 .footer .t {
   -webkit-transform: rotate(13deg);
-          transform: rotate(13deg);
+  transform: rotate(13deg);
 }
 
 .footer .fa {
@@ -499,8 +511,7 @@ body {
 .mobile-view {
   display: none;
 }
-.mobile-view1
-{
+.mobile-view1 {
   display: none;
 }
 
@@ -509,8 +520,7 @@ body {
   nav {
     background-color: #c71c2f;
   }
-  .mobile-view1
-  {
+  .mobile-view1 {
     display: inline-block;
     text-align: center;
   }
@@ -523,14 +533,12 @@ body {
   .man {
     display: none;
   }
- .mycard
- {
-   font-size: 10px !important;
- }
- .mycard button
- {
-   font-size: 10px !important;
- }
+  .mycard {
+    font-size: 10px !important;
+  }
+  .mycard button {
+    font-size: 10px !important;
+  }
   .mobile-second {
     text-align: center;
     display: block;
@@ -653,8 +661,7 @@ body {
   .footer-top h1 {
     font-size: 50px !important;
   }
-  .mobile-view1
-  {
+  .mobile-view1 {
     display: inline-block;
     text-align: center;
   }
@@ -802,36 +809,27 @@ body {
   .header .navbar-brand {
     display: inline-block;
   }
-  .navbar-brand
-  {
+  .navbar-brand {
     margin-left: -70px;
   }
-  nav li
-  {
+  nav li {
     margin-left: -80px;
-
   }
-  .nav-item
-  {
+  .nav-item {
     margin-right: 120px !important;
   }
-  .mobile-second p
-  {
+  .mobile-second p {
     text-align: center;
   }
-  .mobile-view1
-  {
+  .mobile-view1 {
     display: inline-block;
     text-align: center;
   }
-  .videom
-  {
+  .videom {
     margin-right: -300px;
   }
 }
 /*# sourceMappingURL=style.css.map */
-nav li
-  {
-    margin-left: -20px;
-
-  }
+nav li {
+  margin-left: -20px;
+}

@@ -53,17 +53,17 @@
                   </div>
                   <div class="col-md-6">
                     <center class="videom">
-                    <div onclick="playVid()" id="outer">
-                        <video id="myVideo" poster="img/ressources/Group 55.png" class="video" src="video/test.mp4"></video>
-                    </div>
-                    
-                    <!-- <img src="img/ressources/Group 55.png" class="img-fluid" alt=""> -->
+                        <div onclick="playVid()" id="outer">
+                            <video id="myVideo" poster="img/ressources/Group 55.png" class="video" src="video/test.mp4"></video>
+                        </div>
+                        
+                        <!-- <img src="img/ressources/Group 55.png" class="img-fluid" alt=""> -->
 
-                    <div class="mobile-view1 text-center">
-                       <h2>Real Play,<br> Real Learning</h2>
-                        <button>Find in store</button>
-                    </div>
-                </center>
+                        <div class="mobile-view1 text-center">
+                        <h2>Real Play,<br> Real Learning</h2>
+                            <button>Find in store</button>
+                        </div>
+                    </center>
                   </div>
               </div>
             </div>
@@ -93,18 +93,26 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudxercitation ullamco laboris nisi ut al</p>
             <div class="row">
                 <div class="col-md-6">
-                  <span class="left1">Lorem ipsum dolor sit</span> <img src="img/ressources/asset-2.png " class="leftarrow"> <img src="img/ressources/Group 52.png" width="70%" alt="">
+                  <span class="left1">Lorem ipsum dolor sit</span> 
+                  <img src="img/ressources/asset-2.png " class="leftarrow"> 
+                  <img src="img/ressources/Group 52.png" width="70%" alt="">
                 </div>
                 <div class="col-md-6">
-                    <img src="img/ressources/Group 43.png" width="70%" alt=""> <span class="right1">Lorem ipsum dolor sit</span> <img src="img/ressources/asset-1.png " class="rightarrow"> 
+                    <img src="img/ressources/Group 43.png" width="70%" alt=""> 
+                    <span class="right1">Lorem ipsum dolor sit</span> 
+                    <img src="img/ressources/asset-1.png " class="rightarrow"> 
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
-                  <span class="left2">Lorem ipsum dolor sit</span> <img src="img/ressources/asset33.png" class="leftarrow1"> <img src="img/ressources/Group 54.png" width="70%" class="imgleft" alt="">
+                  <span class="left2">Lorem ipsum dolor sit</span> 
+                  <img src="img/ressources/asset33.png" class="leftarrow1"> 
+                  <img src="img/ressources/Group 54.png" width="70%" class="imgleft" alt="">
                 </div>
                 <div class="col-md-6">
-                    <img src="img/ressources/Group 54.png" class="imgright" width="70%" alt=""> <span class="right2">Lorem ipsum dolor sit</span> <img src="img/ressources/asset-4.png" class="rightarrow1">
+                    <img src="img/ressources/Group 54.png" class="imgright" width="70%" alt=""> 
+                    <span class="right2">Lorem ipsum dolor sit</span> 
+                    <img src="img/ressources/asset-4.png" class="rightarrow1">
                 </div>
             </div>
         </div>
@@ -223,12 +231,13 @@
     <img src="img/background/order.png" class="img-fluid" alt="">
     <!-- footer abober second area -->
     <section class="footer-second container">
-        <div class="row text-center">
+        <div class="row text-center  slides slides-hidden">
             <div class="col-md-6">
                 <img src="img/design/boats.png" class="img-fluid" alt="">
+                
             </div>
             <div class="col-md-6 right">
-                <h3>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h3>
+                    <h3>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h3>
                 <div class="logo">
                     <img src="img/pictos/pirates.png" width="18%" class="img-fluid" alt=""><span class="sparate"></span><img  width="16%" src="img/pictos/d2.png" class="img-fluid" alt=""><span class="sparate"></span><img src="img/pictos/d1.png"  width="16%" class="img-fluid" alt="">
                 </div>
@@ -236,6 +245,37 @@
                 </p>
             </div>
         </div>
+        <div class="row text-center  slides slides-hidden">
+            <div class="col-md-6">
+                <img src="img/design/CASTLE.png" class="img-fluid" alt="">
+                
+            </div>
+            <div class="col-md-6 right">
+                    <h3>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h3>
+                <div class="logo">
+                    <img src="img/pictos/pirates.png" width="18%" class="img-fluid" alt=""><span class="sparate"></span><img  width="16%" src="img/pictos/d2.png" class="img-fluid" alt=""><span class="sparate"></span><img src="img/pictos/d1.png"  width="16%" class="img-fluid" alt="">
+                </div>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat
+                </p>
+            </div>
+        </div>
+        <script>
+            addEventListener("load",() => { // "load" is safe but "DOMContentLoaded" starts earlier
+                var index = 0;
+                const slides = document.querySelectorAll(".slides");
+                const classHide = "slides-hidden", count = slides.length;
+
+
+                nextSlide();
+                function nextSlide() {
+                    slides[(index ++) % count].classList.add(classHide);
+                    slides[index % count].classList.remove(classHide);
+                    setTimeout(nextSlide, 3000);
+                }
+
+               
+            });
+        </script>
     </section>
 
     <!-- Footer Abover One area -->
