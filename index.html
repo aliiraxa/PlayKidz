@@ -15,7 +15,7 @@
     <!-- header Alrea -->
     <section class="header">
         <header>
-            <nav id="scroll" class="navbar navbar-expand-lg navbar-custom navbar-light bg-nav container-fluid">
+            <nav id="scroll" class="navbar navbar-expand-lg navbar-custom navbar-light bg-nav">
                 <a class="navbar-brand" href="#"><img src="img/logos/logo.png" width="40%" class="img-fluid"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -404,17 +404,27 @@
           function pauseVid() { 
             vid.pause(); 
           } 
+          // document ready
+(function ($) {
 
+// scroll functions
+$(window).scroll(function(e) {
 
-          $(window).scroll(function() {     
-            var scroll = $(window).scrollTop();
-            if (scroll > 0) {
-                $("#scroll").addClass("active");
-            }
-            else {
-                $("#scroll").removeClass("active");
-            }
-        });
+    // add/remove class to navbar when scrolling to hide/show
+    var scroll = $(window).scrollTop();
+    if (scroll >= 100) {
+        $('.navbar').addClass("navbar-hide");
+        $('.mobile-view').addClass("hide");
+    } else {
+        $('.navbar').removeClass("navbar-hide");
+        $('.mobile-view').removeClass("hide");
+    }
+
+});
+
+})(jQuery);    
+
+        
           </script> 
 </body>
 </html>
